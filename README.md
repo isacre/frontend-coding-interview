@@ -7,6 +7,7 @@ Thank you for the opportunity to interview with Clever. So far, the interview pr
 ## 📱 App Preview
 
 [Live Demo](https://cleverphotos.netlify.app/)
+Note: Due to a peculiarity of Netlify, directly accessing /all-photos (e.g., via brute-forcing the URL) will return a 404 error. However, it works as expected in the local development environment.
 
 ## 🚀 How to Run the App Locally
 
