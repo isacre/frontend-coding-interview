@@ -4,7 +4,11 @@ Hello!
 
 Thank you for the opportunity to interview with Clever. So far, the interview process has been great. I’m excited to continue getting to know the team especially the guy in the green costume from Glassdoor 👽.
 
-## 🚀 How to Run the App
+## 📱 App Preview
+
+[Live Demo](https://cleverphotos.netlify.app/all-photos)
+
+## 🚀 How to Run the App Locally
 
 1. Clone the repository
 2. Create a `.env` file in the root of the project using `.env.example` as a reference
