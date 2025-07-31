@@ -23,6 +23,18 @@ npm install
 npm run dev
 ```
 
+## 🧪 How to run tests
+
+```bash
+npm run test
+```
+
+## 🧪 How to check test coverage
+
+```bash
+npm run coverage
+```
+
 ## 🛠️ What I Would Do to Make This a Production-Ready App
 
 - Integrate a database to persist user data and credentials
@@ -31,7 +43,6 @@ npm run dev
 - Add logout functionality
 - Add pagination with **infinite scroll** to the photo feed
 - Implement email workflows for account confirmation and password recovery
-- Write comprehensive tests to support a CI/CD pipeline
 - Improve error handling and display user-friendly messages
 - Add a **profile/settings page** for users to manage their account
 - Create a **"Liked Photos"** page for users to view their favorites
@@ -63,6 +74,7 @@ npm run dev
 - **Axios** for API requests
 - **Styled Components** for scoped and maintainable styles
 - **Local Storage** for storing user credentials
+- **Vitest**/**React Testing Library** for testing
 
 ### ✨ Key Features
 
@@ -74,6 +86,7 @@ npm run dev
 - Template for protected routes
 - Responsive design for all screen sizes
 - Pixel-perfect layout based on the provided mockups
+- Relevant ports of the app are covered by tests (80%)
 
 Let me know if you'd like me to walk through any part of the codebase or decisions in more detail!
 
