@@ -1,4 +1,4 @@
-import { type RouteObject } from "react-router";
+import { type RouteObject } from "react-router-dom";
 import AllPhotosPage from "../../pages/all-photos";
 
 const protectedRoutes: RouteObject[] = [
