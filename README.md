@@ -1,46 +1,59 @@
-# Clever's Frontend Coding Interview
+# 👋 To the Clever Team
 
-👋 Hello!, Hola!, Witam!
+Hello!
 
-Thank you for taking the time to interview with Clever. This coding challenge is meant to be a _short_ exercise to see how you code on the frontend. Please don't spend more than a couple hours, and certainly don't stress. Treat it like you would any other coding task. Throw on some tunes 🎶, sit back, relax 😌, and code!
+Thank you for the opportunity to interview with Clever. So far, the interview process has been clear, engaging, and enjoyable. I’m excited to continue getting to know the team and learn more about how I can contribute.
 
-### Requirements
+## 🚀 How to Run the App
 
-- Create a small web app using React and Typescript.
-- Up to you how you scaffold it (eg. Next, Vite, even CRA).
-- However, please use either `npm` or `yarn`.
-- It will utilize the Pexels API to pull in some photos. Details below.
-- We'd like you to create two (mobile responsive) pages:
-  1. Sign in
-  2. All photos
-- You can fork this repo and commit your code there. Once done, please add the following users as members so we can review:
-  - James Crain (@imjamescrain)
-  - Jimmy Lien (@jlien)
-  - Nick Clucas (@nickcluc)
-  - Ryan McCue (@rymccue)
-- We'll circle back with you and review 1:1.
+1. Clone the repository
+2. Create a `.env` file in the root of the project using `.env.example` as a reference
+3. Install the dependencies and start the development server:
 
-### Details
+```bash
+npm install
+```
 
-- Mocks for these pages are provided in Figma. You should have been sent an invite to access them, if not let us know.
-  - [Figma Mocks](https://www.figma.com/file/wr1seCuhlRtoFGuz1iWgyF/Frontend-Coding-Mocks?type=design&node-id=0%3A1&mode=design&t=Uw1av3TypDUDcLAd-1)
-  - We are looking for **attention to detail** when implementing these.
-- There is also a logo and an icon provided (SVGs) included in this repo.
-- Pexels API Info
+```bash
+npm run dev
+```
 
-  - Api Key: `Mz0iC21IFLz9HuN8ypIbJ54l8OuGnpW2IsVoQrYBEyagQXt1YeBEA7H0`
-  - Include an `Authorization` header with this value.
-  - Endpoint: https://api.pexels.com/v1/search?query=nature&per_page=10
+## 🛠️ What I Would Do to Make This a Production-Ready App
 
-  - Documenation: https://www.pexels.com/api/documentation/#photos-search
+- Integrate a database to persist user data and credentials
+- Implement authentication using JWT or another secure method
+- Store JWT tokens in **httpOnly** cookies for enhanced security
+- Add logout functionality
+- Add pagination with **infinite scroll** to the photo feed
+- Implement email workflows for account confirmation and password recovery
+- Write comprehensive tests to support a CI/CD pipeline
+- Improve error handling and display user-friendly messages
+- Add a **profile/settings page** for users to manage their account
+- Create a **"Liked Photos"** page for users to view their favorites
 
-- Make the "Sign in" page functional. However, you can spoof authentication any way you'd like (eg. save a value to local storage, etc).
-- Make "All photos" require authentication to access.
-- Only need to show 10 photos on the "All photos" page. Paging is not required.
-- Photos should be like/unlikeable.
+## 🧠 My Approach
 
-### Final Thoughts
+### 🛠️ Tech Stack
 
-Remember, please don't spend too much time on this. In fact, save a little time and **add a section to the README** outlining what else you'd do differently to make this a production ready app. We really just want to make sure you understand core React concepts (ie. context providers, memoization, callbacks, etc).
+- **React**, **TypeScript**, and **Vite** for building a fast and modern frontend
+- **React Router** for client-side navigation
+- **React Context** for managing authentication state
+- **React Hook Form** for performant form handling
+- **Axios** for API requests
+- **Styled Components** for scoped and maintainable styles
 
-**Any questions**, just let us know. Send emails to <a href="mailto:james.crain@movewithclever.com">james.crain@movewithclever.com</a>. Good luck!
+### ✨ Key Features
+
+- Sign-in page with password reset functionality
+- Fully accessible and keyboard-friendly UI
+- Reusable components for consistency and scalability
+- Lazy-loaded images for performance optimization
+- Memoized image gallery to avoid unnecessary re-renders
+- Template for protected routes
+- Responsive design for all screen sizes
+- Pixel-perfect layout based on the provided mockups
+
+Let me know if you'd like me to walk through any part of the codebase or decisions in more detail!
+
+Best,  
+**Isaac Melo**
