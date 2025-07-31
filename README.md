@@ -6,7 +6,7 @@ Thank you for the opportunity to interview with Clever. So far, the interview pr
 
 ## 📱 App Preview
 
-[Live Demo](https://cleverphotos.netlify.app/all-photos)
+[Live Demo](https://cleverphotos.netlify.app/)
 
 ## 🚀 How to Run the App Locally
 
