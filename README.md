@@ -30,8 +30,24 @@ npm run dev
 - Improve error handling and display user-friendly messages
 - Add a **profile/settings page** for users to manage their account
 - Create a **"Liked Photos"** page for users to view their favorites
+- I would use a library like **React Query** to handle the data fetching and caching
+- Would add a search and sort functionality to the photo gallery with a debounce to avoid unnecessary re-renders and api calls.
+
+## 📝 Notes
+
+- I could't find a good useCase for useMemo in this project for the lack of expensive operations, so i'm not using it. (but i do understand the importance of it and i'm aware of the performance benefits)
+
+- For this project, the app only saves one user credential in the local storage, so if you forget your credentials, just click the "Forgot password" link and you'll be able to sign in again saving new credentials.
+
+- Breakpoints are set to 1200px for the desktop version, cause it provided the best experience for the user in different screen sizes.
 
 ## 🧠 My Approach
+
+1. On login, if user is not found in local storage, save it, in cenarios where user in saved but credentials are not correct, block the login and show an error message.
+2. Authentication is done by comparing the credentials sent by the user with the ones saved in local storage.
+3. useAuth hook is used to abstract the authentication logic from the components.
+4. Context is used to store if the user is authenticated or not, and if the user is authenticated, the app will redirect to the home page.
+5. Authentication required routes are protected by a private template that redirects to the login page if the user is not authenticated, making it easy to implement more routes in the future.
 
 ### 🛠️ Tech Stack
 
@@ -41,6 +57,7 @@ npm run dev
 - **React Hook Form** for performant form handling
 - **Axios** for API requests
 - **Styled Components** for scoped and maintainable styles
+- **Local Storage** for storing user credentials
 
 ### ✨ Key Features
 

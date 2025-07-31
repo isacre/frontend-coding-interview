@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { type SetStateAction } from "../../../types/user";
+import { type SetStateAction } from "../../../types";
 
 interface AuthContextType {
   isAuthenticated: boolean;

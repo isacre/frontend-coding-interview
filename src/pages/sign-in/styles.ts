@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   padding-top: 36px;
   gap: 40px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     height: 100vh;
     justify-content: center;
   }

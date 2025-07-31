@@ -4,6 +4,7 @@ import type { User } from "../types/user";
 const USER_KEY = "user";
 
 export default function useAuth() {
+  //useCallback for future useCases where authenticate is passed down as a prop to a child component
   const authenticate = useCallback(async (user: User) => {
     if (user.email && user.password) {
       const promise = new Promise((resolve, reject) => {
