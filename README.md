@@ -2,7 +2,7 @@
 
 Hello!
 
-Thank you for the opportunity to interview with Clever. So far, the interview process has been clear, engaging, and enjoyable. I’m excited to continue getting to know the team and learn more about how I can contribute.
+Thank you for the opportunity to interview with Clever. So far, the interview process has been great. I’m excited to continue getting to know the team especially the guy in the green costume from Glassdoor 👽.
 
 ## 🚀 How to Run the App
 
