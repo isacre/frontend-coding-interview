@@ -30,7 +30,8 @@ export default function SignInPage() {
 
   function handleForgotPassword(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
-    window.alert("Your password has been sent to your email address");
+    window.alert("We refreshed our database, please sign in again");
+    localStorage.clear();
   }
 
   return (

@@ -1,5 +1,17 @@
 import notliked from "../../assets/notliked.png";
 import liked from "../../assets/liked.png";
+import styled from "styled-components";
+
+const Wrapper = styled.button`
+  border: none;
+  background: none;
+  align-self: flex-start;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
 
 export default function LikeButton({
   isLiked,
@@ -9,16 +21,8 @@ export default function LikeButton({
   setIsLiked: (isLiked: boolean) => void;
 }) {
   return (
-    <button
-      onClick={() => setIsLiked(!isLiked)}
-      style={{
-        border: "none",
-        background: "none",
-        alignSelf: "flex-start",
-        cursor: "pointer",
-      }}
-    >
+    <Wrapper onClick={() => setIsLiked(!isLiked)}>
       <img src={isLiked ? liked : notliked} alt="like-button" />
-    </button>
+    </Wrapper>
   );
 }
