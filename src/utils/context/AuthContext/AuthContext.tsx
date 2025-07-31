@@ -5,7 +5,4 @@ interface AuthContextType {
   isAuthenticated: boolean;
   setIsAuthenticated: SetStateAction<boolean>;
 }
-export const AuthContext = createContext<AuthContextType>({
-  isAuthenticated: false,
-  setIsAuthenticated: () => {},
-});
+export const AuthContext = createContext<AuthContextType | null>(null);

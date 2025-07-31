@@ -1,4 +1,4 @@
-import links from "../../assets/links.svg";
+import links from "../../../assets/links.svg";
 import styled from "styled-components";
 
 const Link = styled.a`

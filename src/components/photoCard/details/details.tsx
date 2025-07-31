@@ -41,6 +41,7 @@ const ColorPreviewWrapper = styled.div`
 `;
 const MainColor = styled.div<{ color: string }>`
   color: ${({ color }) => color};
+  font-size: 14px;
 `;
 const ColorPreview = styled.div`
   width: 10px;
@@ -71,7 +72,7 @@ export default function NameAndDescription({
       </DescriptionWrapper>
       <ColorPreviewWrapper>
         <MainColor color={avg_color}>{avg_color}</MainColor>
-        <ColorPreview color={avg_color} />
+        <ColorPreview color={avg_color} data-testid="color-preview" />
       </ColorPreviewWrapper>
     </Wrapper>
   );

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import LoadingSpinner from "../loadingSpinner";
+import LoadingSpinner from "../../loadingSpinner";
 
 const Wrapper = styled.div<{ height: number; width: number }>`
   position: relative;
@@ -41,6 +41,7 @@ interface Props {
 
 export default function Photo({ url, height = 75, width = 75, alt }: Props) {
   const [Loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
   return (
     <Wrapper height={height} width={width}>
       <img
@@ -48,11 +49,18 @@ export default function Photo({ url, height = 75, width = 75, alt }: Props) {
         alt={alt}
         loading="lazy"
         onLoad={() => setLoading(false)}
-        onError={() => setLoading(false)}
+        onError={() => {
+          setLoading(false);
+          setError(true);
+        }}
       />
-      {Loading && (
+      {(Loading || error) && (
         <FakeCard width={width} height={height}>
-          <LoadingSpinner />
+          {error ? (
+            <div data-testid="error-icon">X</div>
+          ) : (
+            <LoadingSpinner data-testid="loading-spinner" />
+          )}
         </FakeCard>
       )}
     </Wrapper>

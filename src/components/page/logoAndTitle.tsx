@@ -8,7 +8,11 @@ export default function LogoAndTitle({
   alignItems = "center",
 }: Props) {
   return (
-    <LogoAndTitleWrapper size={size} alignItems={alignItems}>
+    <LogoAndTitleWrapper
+      size={size}
+      alignItems={alignItems}
+      data-testid={`logo-and-title`}
+    >
       <img src={logo} alt="clever-real-state-logo" />
       <h1>{title}</h1>
     </LogoAndTitleWrapper>

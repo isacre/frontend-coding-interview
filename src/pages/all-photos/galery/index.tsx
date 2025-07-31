@@ -1,7 +1,7 @@
 import { type JSX } from "react";
 import LoadingSpinner from "../../../components/loadingSpinner";
 import type { Photo } from "../../../services/pexels/types";
-import PhotoComponent from "../Photo";
+import PhotoComponent from "../photo";
 import { GaleryWrapper, LoadingWrapper } from "./styles";
 
 interface Props {

@@ -16,5 +16,5 @@ const SpinnerWrapper = styled.div`
 `;
 
 export default function LoadingSpinner() {
-  return <SpinnerWrapper />;
+  return <SpinnerWrapper data-testid="loading-spinner" />;
 }

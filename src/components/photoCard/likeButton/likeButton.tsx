@@ -1,5 +1,5 @@
-import notliked from "../../assets/notliked.png";
-import liked from "../../assets/liked.png";
+import notliked from "../../../assets/notliked.png";
+import liked from "../../../assets/liked.png";
 import styled from "styled-components";
 import { useState } from "react";
 
@@ -18,7 +18,15 @@ export default function LikeButton() {
   const [isLiked, setIsLiked] = useState(false);
   return (
     <Wrapper onClick={() => setIsLiked(!isLiked)}>
-      <img src={isLiked ? liked : notliked} alt="like-button" />
+      {isLiked ? (
+        <img src={liked} alt="liked-button" data-testid="liked-button" />
+      ) : (
+        <img
+          src={notliked}
+          alt="not-liked-button"
+          data-testid="not-liked-button"
+        />
+      )}
     </Wrapper>
   );
 }

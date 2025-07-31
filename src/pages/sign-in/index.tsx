@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.svg";
 import Inputs from "../../components/inputs";
 import { useForm } from "react-hook-form";
-import useAuth from "../../hooks/useAuth";
+import useAuth from "../../hooks/useAuth/useAuth";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../utils/context/AuthContext/useAuthContext";
 import { Wrapper, LogoAndTitle, Form, ForgotPasswordButton } from "./styles";
@@ -49,10 +49,15 @@ export default function SignInPage() {
           type="email"
           id="email"
           required
+          data-testid="email-input"
         />
         <Inputs.TextWithLabel
           actionComponent={
-            <ForgotPasswordButton type="button" onClick={handleForgotPassword}>
+            <ForgotPasswordButton
+              data-testid="forgot-password-button"
+              type="button"
+              onClick={handleForgotPassword}
+            >
               Forgot password?
             </ForgotPasswordButton>
           }
@@ -62,8 +67,11 @@ export default function SignInPage() {
           type="password"
           id="password"
           required
+          data-testid="password-input"
         />
-        <Inputs.Button type="submit">Sign in</Inputs.Button>
+        <Inputs.Button type="submit" data-testid="sign-in-button">
+          Sign in
+        </Inputs.Button>
       </Form>
     </Wrapper>
   );

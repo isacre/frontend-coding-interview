@@ -14,7 +14,7 @@ export default function ProtectedTemplate() {
   }, [isAuthenticated, navigate]);
 
   return isAuthenticated ? (
-    <Wrapper>
+    <Wrapper data-testid="protected-page">
       <Outlet />
     </Wrapper>
   ) : null;
