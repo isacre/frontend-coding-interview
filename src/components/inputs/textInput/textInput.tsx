@@ -28,10 +28,12 @@ export default function FormField({
   return (
     <Wrapper>
       <div className="label-wrapper">
-        <label htmlFor={id}>{title}</label>
+        <label data-testid="label" htmlFor={id}>
+          {title}
+        </label>
         {actionComponent}
       </div>
-      <input type={type} id={id} {...props} />
+      <input data-testid="input-field" type={type} id={id} {...props} />
     </Wrapper>
   );
 }

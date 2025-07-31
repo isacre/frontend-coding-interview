@@ -1,4 +1,4 @@
-import TextWithLabel from "./textInput";
+import TextWithLabel from "./textInput/textInput";
 import Button from "./button";
 const Inputs = {
   TextWithLabel,
