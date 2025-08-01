@@ -49,7 +49,7 @@ npm run coverage
 npm run e2e
 ```
 
-## 📚 How to runStorybook (Component Documentation)
+## 📚 How to run Storybook (Component Documentation)
 
 ```bash
 npm run storybook
