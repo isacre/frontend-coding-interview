@@ -43,15 +43,11 @@ npm run coverage
 
 3. Start the cypress app with the following command
 
+**OBS: Server must be running to run cypress tests.**
+
 ```bash
 npm run e2e
 ```
-
-4. Click E2E testing
-
-5. Pick Electron
-
-6. Run individually user flows by clicking on each test file
 
 ## 🛠️ What I Would Do to Make This a Production-Ready App
 
