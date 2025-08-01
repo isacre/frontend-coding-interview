@@ -14,21 +14,18 @@ const Name = styled.b`
   line-height: 100%;
   letter-spacing: 0%;
 `;
-const DescriptionWrapper = styled.div`
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-`;
+
 const Description = styled.p`
   font-family: Helvetica;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
+  margin: 0;
 
   @media (max-width: 1200px) {
-    display: -webkit-box;
     -webkit-line-clamp: 2;
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -67,9 +64,7 @@ export default function NameAndDescription({
         <Name>{name}</Name>
         {actionComponent && actionComponent}
       </div>
-      <DescriptionWrapper>
-        <Description>{alt}</Description>
-      </DescriptionWrapper>
+      <Description>{alt}</Description>
       <ColorPreviewWrapper>
         <MainColor color={avg_color}>{avg_color}</MainColor>
         <ColorPreview color={avg_color} data-testid="color-preview" />

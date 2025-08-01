@@ -31,7 +31,7 @@ export default function FormField({
         <label data-testid="label" htmlFor={id}>
           {title}
         </label>
-        {actionComponent}
+        {actionComponent && actionComponent}
       </div>
       <input data-testid="input-field" type={type} id={id} {...props} />
     </Wrapper>
