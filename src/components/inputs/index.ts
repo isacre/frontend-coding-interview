@@ -1,8 +1,6 @@
-import TextWithLabel from "./textInput/textInput";
-import Button from "./button";
+import TextWithLabel from "./textInputWithLabel/textInput";
 const Inputs = {
   TextWithLabel,
-  Button,
 };
 
 export default Inputs;

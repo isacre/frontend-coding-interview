@@ -1,6 +1,6 @@
 import React from "react";
-import FormField from "../../../components/inputs/textInput/textInput";
-import Button from "../../../components/inputs/button";
+import FormField from "../../../components/inputs/textInputWithLabel/textInput";
+import Button from "../../../components/button";
 
 export const Form: React.FC = () => {
   return (

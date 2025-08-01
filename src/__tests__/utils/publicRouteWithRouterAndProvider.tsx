@@ -1,5 +1,5 @@
 import { MemoryRouter, Route, Routes } from "react-router-dom";
-import { AuthContextProvider } from "../../utils/context/AuthContext/AuthContextProvider";
+import { AuthContextProvider } from "../../contexts/AuthContext/AuthContextProvider";
 import PublicTemplate from "../../templates/public";
 
 export function PublicRouteWithRouterAndProvider({

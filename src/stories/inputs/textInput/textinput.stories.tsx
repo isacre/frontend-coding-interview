@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import FormField from "../../../components/inputs/textInput/textInput";
+import FormField from "../../../components/inputs/textInputWithLabel/textInput";
 import "../../../index.css";
 const meta = {
   title: "Components/Inputs/TextInput",

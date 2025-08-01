@@ -4,7 +4,7 @@ import PublicTemplate from "./templates/public";
 import ProtectedTemplate from "./templates/protected";
 import protectedRoutes from "./routes/protected";
 import publicRoutes from "./routes/public";
-import { AuthContextProvider } from "./utils/context/AuthContext/AuthContextProvider";
+import { AuthContextProvider } from "./contexts/AuthContext/AuthContextProvider";
 
 function App() {
   return (

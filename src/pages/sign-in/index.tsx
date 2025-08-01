@@ -1,10 +1,11 @@
 import logo from "../../assets/logo.svg";
 import Inputs from "../../components/inputs";
 import { useForm } from "react-hook-form";
-import useAuth from "../../hooks/useAuth/useAuth";
+import useAuth from "../../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
-import { useAuthContext } from "../../utils/context/AuthContext/useAuthContext";
+import { useAuthContext } from "../../hooks/useAuthContext";
 import { Wrapper, LogoAndTitle, Form, ForgotPasswordButton } from "./styles";
+import Button from "../../components/button";
 
 interface SignInFormData {
   email: string;
@@ -69,9 +70,9 @@ export default function SignInPage() {
           required
           data-testid="password-input"
         />
-        <Inputs.Button type="submit" data-testid="sign-in-button">
+        <Button type="submit" data-testid="sign-in-button">
           Sign in
-        </Inputs.Button>
+        </Button>
       </Form>
     </Wrapper>
   );

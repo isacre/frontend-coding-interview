@@ -1,9 +1,9 @@
 import { describe, it, expect, beforeEach } from "vitest";
-import { useAuthContext } from "./useAuthContext";
+import { useAuthContext } from "../../hooks/useAuthContext";
 import { AuthContextProvider } from "./AuthContextProvider";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { renderHook } from "@testing-library/react";
-import { DummyConsumerComponentWithAuth } from "../../../__tests__/utils/dummyComponentWithAuth";
+import { DummyConsumerComponentWithAuth } from "../../__tests__/utils/dummyComponentWithAuth";
 
 describe("AuthContext without provider", () => {
   it("must throw an error if used outside AuthContextProvider (not message specific)", () => {

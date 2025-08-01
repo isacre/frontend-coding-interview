@@ -1,5 +1,5 @@
 import { Page } from "../../components/page";
-import usePhotos from "../../hooks/usePhotos/usePhotos";
+import usePhotos from "../../hooks/usePhotos";
 import Galery from "./galery";
 import { Wrapper } from "./styles";
 

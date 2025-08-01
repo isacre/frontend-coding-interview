@@ -1,4 +1,4 @@
-import { useAuthContext } from "../../utils/context/AuthContext/useAuthContext";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 export const DummyConsumerComponentWithAuth = () => {
   const { isAuthenticated, setIsAuthenticated } = useAuthContext();

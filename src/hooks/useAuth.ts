@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import type { User } from "../../types/user";
+import type { User } from "../types/user";
 
 const USER_KEY = "user";
 

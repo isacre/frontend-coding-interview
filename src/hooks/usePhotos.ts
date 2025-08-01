@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import type { Photo } from "../../services/pexels/types";
-import { getPhotos } from "../../services/pexels";
+import type { Photo } from "../services/pexels/types";
+import { getPhotos } from "../services/pexels";
 
 export default function usePhotos() {
   const [photos, setPhotos] = useState<Photo[]>([]);
