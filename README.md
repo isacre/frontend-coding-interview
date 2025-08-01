@@ -49,6 +49,12 @@ npm run coverage
 npm run e2e
 ```
 
+## 📚 How to runStorybook (Component Documentation)
+
+```bash
+npm run storybook
+```
+
 ## 🛠️ What I Would Do to Make This a Production-Ready App
 
 - Integrate a database to persist user data and credentials
@@ -90,6 +96,7 @@ npm run e2e
 - **Local Storage** for storing user credentials
 - **Vitest**/**React Testing Library** for unit and integrationtesting
 - **Cypress** for end-to-end testing
+- **Storybook** for component documentation
 
 ### ✨ Key Features
 
