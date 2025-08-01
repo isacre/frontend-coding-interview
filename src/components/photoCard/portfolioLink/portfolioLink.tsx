@@ -27,7 +27,7 @@ interface Props {
 }
 export default function PortfolioLink({ link, text }: Props) {
   return (
-    <Link href={link} target="_blank">
+    <Link href={link} target="_blank" data-testid="portfolio-link">
       <img src={links} />
       {text}
     </Link>
