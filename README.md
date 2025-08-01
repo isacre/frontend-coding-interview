@@ -2,7 +2,7 @@
 
 Hello!
 
-Thank you for the opportunity to interview with Clever. So far, the interview process has been great. I’m excited to continue getting to know the team especially the guy in the green costume from Glassdoor 👽.
+Thank you for the opportunity to interview with Clever. So far, the process has been great. I’m excited to continue getting to know the team especially the guy in the green costume from Glassdoor 👽.
 
 ## 📱 App Preview
 
@@ -29,11 +29,29 @@ npm run dev
 npm run test
 ```
 
-## 🧪 How to check test coverage
+## 📊 How to check test coverage
 
 ```bash
 npm run coverage
 ```
+
+## 🕹️ How to run e2e tests
+
+1. Make sure you your computer meets the [requirements](https://docs.cypress.io/app/get-started/install-cypress#System-requirements) to run Cypress.
+
+2. If you're using linux, you need to install the following [dependencies](https://docs.cypress.io/app/get-started/install-cypress#Linux-Prerequisites)
+
+3. Start the cypress app with the following command
+
+```bash
+npm run e2e
+```
+
+4. Click E2E testing
+
+5. Pick Electron
+
+6. Run individually user flows by clicking on each test file
 
 ## 🛠️ What I Would Do to Make This a Production-Ready App
 
@@ -74,7 +92,8 @@ npm run coverage
 - **Axios** for API requests
 - **Styled Components** for scoped and maintainable styles
 - **Local Storage** for storing user credentials
-- **Vitest**/**React Testing Library** for testing
+- **Vitest**/**React Testing Library** for unit and integrationtesting
+- **Cypress** for end-to-end testing
 
 ### ✨ Key Features
 
@@ -87,8 +106,9 @@ npm run coverage
 - Responsive design for all screen sizes
 - Pixel-perfect layout based on the provided mockups
 - Relevant ports of the app are covered by tests (80%)
+- End-to-end tests are implemented to ensure the main user flows work as expected
 
 Let me know if you'd like me to walk through any part of the codebase or decisions in more detail!
 
-Best,  
+Best regards,  
 **Isaac Melo**
