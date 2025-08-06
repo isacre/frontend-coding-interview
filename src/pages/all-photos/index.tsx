@@ -4,7 +4,7 @@ import Galery from "./galery";
 import { Wrapper } from "./styles";
 
 export default function AllPhotosPage() {
-  const { photos, photosLoading } = usePhotos();
+  const { photos, photosLoading } = usePhotos("nature");
 
   return (
     <Wrapper>

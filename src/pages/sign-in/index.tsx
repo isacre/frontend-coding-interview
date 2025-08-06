@@ -1,11 +1,11 @@
-import logo from "../../assets/logo.svg";
-import Inputs from "../../components/inputs";
 import { useForm } from "react-hook-form";
-import useAuth from "../../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
-import { useAuthContext } from "../../hooks/useAuthContext";
-import { Wrapper, LogoAndTitle, Form, ForgotPasswordButton } from "./styles";
 import Button from "../../components/button";
+import Inputs from "../../components/inputs";
+import { Page } from "../../components/page";
+import useAuth from "../../hooks/useAuth";
+import { useAuthContext } from "../../hooks/useAuthContext";
+import { ForgotPasswordButton, Form, Wrapper } from "./styles";
 
 interface SignInFormData {
   email: string;
@@ -37,10 +37,7 @@ export default function SignInPage() {
 
   return (
     <Wrapper>
-      <LogoAndTitle>
-        <img src={logo} alt="clever-real-state-logo" />
-        <h1>Sign in to your account</h1>
-      </LogoAndTitle>
+      <Page.LogoAndTitle alignItems="center" title="Sign in to your account" />
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Inputs.TextWithLabel
           autoFocus

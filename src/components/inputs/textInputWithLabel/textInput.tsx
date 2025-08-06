@@ -1,17 +1,5 @@
-import styled from "styled-components";
+import { Wrapper } from "./styles";
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-  width: 100%;
-
-  .label-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-`;
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   title: string;
   type: string;

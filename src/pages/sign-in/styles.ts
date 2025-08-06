@@ -15,18 +15,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const LogoAndTitle = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-
-  img {
-    width: 75px;
-    height: 75px;
-  }
-`;
-
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
